@@ -1,0 +1,15 @@
+<div class="box">
+<a routerLink="/home">
+<h1>Hotel Watch</h1>
+</a>
+<div class="review"*ngFor="let review of newlist">
+    <ul>
+    <li>Property: {{review?.property_name}}</li>
+    <li>Rating: {{review?.review_rating}}</li>
+    <li>Title: {{review?.review_title}}</li>
+    <li>Review: {{review?.review_text}}</li>
+    <li>Reviewer location: {{review?.reviewer_location}}</li>
+    <li>Review date: {{review?.review_date}}</li>
+    </ul>
+</div>
+</div>

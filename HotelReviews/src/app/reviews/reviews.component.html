@@ -1,0 +1,22 @@
+<div class="box">
+<a routerLink="/home">
+<h1>Hotel Watch</h1>
+</a>
+<form>
+    <input type="text" id="search_property" #search_property/>
+    <button class="button" type="submit" (click)="onSubmit(search_property.value); $event.preventDefault()">Search</button>
+</form>
+
+<div class="review"*ngFor="let review of newlist">
+<a [routerLink]="['/reviewdetail', review?.review_title]">
+<ul>
+<li>Property: {{review?.property_name}}</li>
+<li>Rating: {{review?.review_rating}}</li>
+<li>Title: {{review?.review_title}}</li>
+<li>Review: {{review?.review_text}}</li>
+<li>Reviewer location: {{review?.reviewer_location}}</li>
+<li>Review date: {{review?.review_date}}</li>
+</ul>
+</a>
+</div>
+</div>

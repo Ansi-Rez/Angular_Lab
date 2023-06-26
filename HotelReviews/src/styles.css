@@ -1,0 +1,42 @@
+
+body
+{
+    background-color:lightpink;
+    font-size:14;
+    font-weight:600;
+}
+
+.box
+{
+    padding:0 15% 0 15%;
+}
+
+h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:navy;
+}
+
+a
+{
+    text-decoration:none;
+    color:black;
+}
+
+.review
+{
+    margin:10px;
+    border:1px solid black; 
+    background-color: aqua;
+}
+
+.review ul
+{
+    list-style-type:none;
+}
+
+.review ul li
+{
+    margin:8px;
+}
